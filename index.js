@@ -33,7 +33,7 @@ const server = app.listen(port, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://chatport.onrender.com",
+    origin: "http://localhost:3000",
     methods:[ "GET","POST"],
     credentials: true,
   },

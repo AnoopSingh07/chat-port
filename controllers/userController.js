@@ -51,6 +51,7 @@ module.exports.getAllUsers = async (req, res, next) => {
   } catch (ex) {
     next(ex);
   }
+  console.log(ex);
 };
 
 module.exports.setAvatar = async (req, res, next) => {
