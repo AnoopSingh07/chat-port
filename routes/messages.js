@@ -1,6 +1,6 @@
 const { addMessage, getMessages } = require("../controllers/messageController");
 const router = require("express").Router();
-// import { BASE_URL } from './constants';
+// import { BASE_URL } from '../constant';
 
 router.post("/addmsg/", addMessage);
 router.post("/getmsg/", getMessages);

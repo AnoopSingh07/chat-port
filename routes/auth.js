@@ -14,7 +14,7 @@ const {
   router.post("/setavatar/:id", setAvatar);
   router.get("/logout/:id", logOut);
 
-  // import { BASE_URL } from './constants';
+  // import { BASE_URL } from '../constant';
   // const router = require("express").Router();
   
   // router.post(`${BASE_URL}/login`, login);

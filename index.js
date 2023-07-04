@@ -5,6 +5,7 @@ const authRoutes = require("./routes/auth");
 const messageRoutes = require("./routes/messages");
 const app = express();
 const socket = require("socket.io");
+// import { BASE_URL } from './constant';
 
 require("dotenv").config();
 app.use(cors());
@@ -32,7 +33,8 @@ const server = app.listen(port, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://chatport.onrender.com",
+    methods:[ "GET","POST"],
     credentials: true,
   },
 });
